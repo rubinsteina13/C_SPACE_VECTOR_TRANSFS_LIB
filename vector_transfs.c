@@ -56,7 +56,7 @@
 /**
   * @brief  Forward full Clarke transformation function: ABC to Al-Be.
   * @param  ptFFClarke: pointer to user data structure with type "tFFClarke".               
-  * @retval	None
+  * @retval None
   */
 void tFFClarke_abc2albe(tFFClarke* ptFFClarke)
 {
