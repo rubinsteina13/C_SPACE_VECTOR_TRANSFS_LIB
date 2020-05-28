@@ -5,13 +5,13 @@
   * @version V1.0
   * @date    May-2020
   * @brief   This file provides firmware functions for implementation the following
-  *	     	 types of Clarke and Park transformations:
-  *				+ Forward full Clarke transformation - ABC to Alpha-Beta coordinates
+  *	     types of Clarke and Park transformations:
+  *		+ Forward full Clarke transformation - ABC to Alpha-Beta coordinates
   *           	+ Forward reduce Clarke transformation - AB to Alpha-Beta coordinates
-  *		  		  in case when A + B + C = 0
+  *		  in case when A + B + C = 0
   *           	+ Inverse full Clarke transformation - Alpha-Beta to ABC coordinates
   *           	+ Inverse reduce Clarke transformation - Alpha-Beta to AB coordinates
-  *		  		  in case when A + B + C = 0
+  *		  in case when A + B + C = 0
   *           	+ Forward Park transformation - Alpha-Beta to DQ coordinates
   *           	+ Inverse Park transformation - DQ to Alpha-Beta coordinates
   ***********************************************************************************
@@ -61,7 +61,7 @@
 void tFFClarke_abc2albe(tFFClarke* ptFFClarke)
 {
 	ptFFClarke->fAl = (2.0f/3.0f)*ptFFClarke->fA - 
-					  (1.0f/3.0f)*(ptFFClarke->fB - ptFFClarke->fC);
+			  (1.0f/3.0f)*(ptFFClarke->fB - ptFFClarke->fC);
 	ptFFClarke->fBe = (2.0f/SQRT_3)*(ptFFClarke->fB - ptFFClarke->fC);
 }
 
