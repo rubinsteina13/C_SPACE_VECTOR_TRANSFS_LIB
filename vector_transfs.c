@@ -60,7 +60,8 @@
   */
 void tFFClarke_abc2albe(tFFClarke* ptFFClarke)
 {
-	ptFFClarke->fAl = (2.0f/3.0f)*ptFFClarke->fA - (1.0f/3.0f)*(ptFFClarke->fB - ptFFClarke->fC);
+	ptFFClarke->fAl = (2.0f/3.0f)*ptFFClarke->fA - 
+			  (1.0f/3.0f)*(ptFFClarke->fB - ptFFClarke->fC);
 	ptFFClarke->fBe = (2.0f/SQRT_3)*(ptFFClarke->fB - ptFFClarke->fC);
 }
 
