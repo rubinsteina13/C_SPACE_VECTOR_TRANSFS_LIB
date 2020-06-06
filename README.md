@@ -22,7 +22,7 @@ This embedded C-library provides the various types of space-vector transformatio
 
         #include "vector_transfs.h"
 	
-	// updatable user variables:
+        // updatable user variables:
         float al, be, a, b, c;
 				
         // 1st step: create and initialize the global variable of user data structure
