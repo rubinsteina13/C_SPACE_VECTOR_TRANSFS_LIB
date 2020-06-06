@@ -44,7 +44,7 @@ This embedded C-library provides the various types of space-vector transformatio
         // 1st step: create and initialize the global variable of user data structure
         tFPark sFPark = F_PARK_DEFAULTS;
 
-        // 2nd step: Next code must be executed every time a new calculation of a, b, c is needed
+        // 2nd step: Next code must be executed every time a new calculation of d, q is needed
         sFPark.fAl = al;                  // set Alpha input
         sFPark.fBe = be;                  // set Beta input
         sFPark.fSinAng = sinf(angle);     // calculate sine
