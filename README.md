@@ -29,13 +29,29 @@ This embedded C-library provides the various types of space-vector transformatio
         // 2nd step: Next code must be executed every time a new calculation of a, b, c is needed
         sIFClarke.fAl = al;               // set Alpha input
         sIFClarke.fBe = be;               // set Beta input
-        sIFClarke.m_albe2abc(&sIFClarke); // call the Clarke Inverse Full transformation function
+        sIFClarke.m_albe2abc(&sIFClarke); // call the Inverse Full Clarke transformation function
         a = sIFClarke.fA;                 // update the a variable
         b = sIFClarke.fB;                 // update the b variable
         c = sIFClarke.fC;                 // update the c variable
 
 * Example 2
 
+	#include <math.h>
+	
+        // updatable user variables:
+        float al, be, d, q, angle;
+				
+        // 1st step: create and initialize the global variable of user data structure
+        tFPark sFPark = F_PARK_DEFAULTS;
+
+        // 2nd step: Next code must be executed every time a new calculation of a, b, c is needed
+        sFPark.fAl = al;                  // set Alpha input
+        sFPark.fBe = be;                  // set Beta input
+        sFPark.fSinAng = sinf(angle);     // calculate sine
+        sFPark.fCosAng = cosf(angle);     // calculate cosine
+        sFPark.m_albe2dq(&sFPark);        // call the Forward Park transformation function
+        d = sIFClarke.fD;                 // update the d variable
+        q = sIFClarke.fQ;                 // update the q variable
 
 # License
   
