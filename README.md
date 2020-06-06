@@ -36,7 +36,7 @@ This embedded C-library provides the various types of space-vector transformatio
 
 * Example 2
 
-	#include <math.h>
+        #include <math.h>
 	
         // updatable user variables:
         float al, be, d, q, angle;
