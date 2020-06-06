@@ -20,10 +20,10 @@ This embedded C-library provides the various types of space-vector transformatio
 
 * Example 1
 
-				// updatable user variables:
-    		float al, be, a, b, c;
-
-    		// 1st step: create and initialize the global variable of user data structure
+        // updatable user variables:
+				float al, be, a, b, c;
+				
+				// 1st step: create and initialize the global variable of user data structure
     		tIFClarke sIFClarke = IF_CLARKE_DEFAULTS;
 
     		// 2nd step: Next code must be executed every time a new calculation of a, b, c is needed
