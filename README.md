@@ -20,7 +20,9 @@ This embedded C-library provides the various types of space-vector transformatio
 
 * Example 1 - Inverse Full Clarke transformation
 
-        // updatable user variables:
+        #include "vector_transfs.h"
+	
+	// updatable user variables:
         float al, be, a, b, c;
 				
         // 1st step: create and initialize the global variable of user data structure
@@ -36,6 +38,7 @@ This embedded C-library provides the various types of space-vector transformatio
 
 * Example 2 - Forward Park transformation
 
+        #include "vector_transfs.h"
         #include <math.h>
 	
         // updatable user variables:
