@@ -18,7 +18,7 @@ This embedded C-library provides the various types of space-vector transformatio
 
 # HowToUse (example)
 
-* Example 1
+* Example 1 - Inverse Full Clarke transformation
 
         // updatable user variables:
         float al, be, a, b, c;
@@ -34,7 +34,7 @@ This embedded C-library provides the various types of space-vector transformatio
         b = sIFClarke.fB;                 // update the b variable
         c = sIFClarke.fC;                 // update the c variable
 
-* Example 2
+* Example 2 - Forward Park transformation
 
         #include <math.h>
 	
